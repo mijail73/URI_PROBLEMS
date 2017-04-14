@@ -9,6 +9,6 @@ public class Uri1011 {
 	Double fraction = 4.0/3;
 	Double radius = in.nextDouble();
 	Double volume = fraction * pi * Math.pow(radius,3);
-	System.out.printf("VOLUME = %.3f", volume);
+	System.out.printf("VOLUME = %.3f\n", volume);
     }
 }
