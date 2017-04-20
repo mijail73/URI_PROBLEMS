@@ -12,7 +12,7 @@ public class Uri1046 {
 	else if(a == b)
 	    hours = 24;
 	else
-	    hours = 24 % (a - b);
+	    hours = b - a + 24;
 	System.out.println("O JOGO DUROU " + hours + " HORA(S)");
     }
 }
