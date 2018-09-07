@@ -1,0 +1,48 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Uri1185 {
+    
+    public static void main(String[] args) throws IOException {
+	Scanner in = new Scanner(System.in);
+	Uri1185 test = new Uri1185();
+	String input = in.nextLine();
+	float number;
+	float matrix[][] = new float[12][12];
+	for (int i = 0; i < 12; i++) {
+	    for (int j = 0; j < 12; j++) {
+		number = in.nextFloat();
+		matrix[i][j] = number;
+	    }
+	}
+	if(input.equals("S")){
+	    System.out.printf("%.1f\n", test.suma(matrix));
+	} else {
+	    System.out.printf("%.1f\n", test.promedio(matrix));
+	}
+    }
+    
+    public float suma(float matrix[][]){
+	int limite = 11;
+	float suma = 0;
+	for (int i = 0; i < 11; i++) {
+	    for (int j = 0; j < limite; j++)
+		suma += matrix[i][j];
+	    limite -= 1;
+	}
+	return suma;
+    }
+    
+    public float promedio(float matrix[][]){
+	int limite = 11;
+	float promedio = 0;
+	for (int i = 0; i < 11; i++) {
+	    for (int j = 0; j < limite; j++)
+		promedio += matrix[i][j];
+	    limite -= 1;
+	}
+	promedio = promedio / 66;
+	return promedio;
+    }
+    
+}
