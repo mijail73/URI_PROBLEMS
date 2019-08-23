@@ -1,5 +1,5 @@
 # URI_PROBLEMS
-Uri online judge, Java solutions.
+Uri online judge, Java solutions, and python3 solutions.
 
   These are my solutions to the [URI platform](https://www.urionlinejudge.com.br/).
   
