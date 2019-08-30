@@ -1,6 +1,5 @@
-# 	Time limit exceeded	Python 3	2.000	8/25/19, 4:02:32 PM
+# 1478	Square Matrix II	Accepted	Python 3	1.256	8/30/19, 9:16:22 AM
 def llenaMatriz(entrada):
-    numerosuperior = 1
     numeroinferior = 1
     matrix = [[1 for x in range(entrada)] for y in range(entrada)]
     for row in range(len(matrix)):
@@ -8,11 +7,8 @@ def llenaMatriz(entrada):
             if(row > val):  # matriz inferior, sin diagonal
                 numeroinferior -= 1
                 matrix[row][val] = numeroinferior
-            elif(val > row):  # matriz superior, sin diagonal
-                numerosuperior += 1
-                matrix[row][val] = numerosuperior
+                matrix[val][row] = numeroinferior
         numeroinferior = row + 3
-        numerosuperior = 1
     return matrix
 
 
